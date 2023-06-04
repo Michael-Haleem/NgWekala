@@ -1,0 +1,74 @@
+<div class="header-nav-bar header-nav-bar-top-border bg-light">
+    <div class="header-container container">
+        <div class="header-row">
+            <div class="header-column">
+                <div class="header-row justify-content-end">
+                    <div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border justify-content-start"
+                        data-sticky-header-style="{'minResolution': 991}"
+                        data-sticky-header-style-active="{'margin-left': '105px'}"
+                        data-sticky-header-style-deactive="{'margin-left': '0'}">
+                        <div
+                            class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-3 header-nav-main-sub-effect-1 w-100">
+                            <nav class="collapse w-100">
+                                <ul class="nav nav-pills w-100" id="mainNav">
+                                    <li class="dropdown dropdown-mega">
+                                        <a class="dropdown-item dropdown-toggle" >
+                                            Brands
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="dropdown-mega-content">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <span class="dropdown-mega-sub-title">Top Brands</span>
+                                                            <ul class="dropdown-mega-sub-nav">
+                                                                <li *ngFor="let brand of brands">
+                                                                    <a class="dropdown-item" routerLink="/brand/{{brand.id}}">
+                                                                        {{brand.name}}
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-mega">
+                                        <a class="dropdown-item dropdown-toggle">
+                                            Stores
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="dropdown-mega-content">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <span class="dropdown-mega-sub-title">Top Stores</span>
+                                                            <ul class="dropdown-mega-sub-nav">
+                                                                <li *ngFor="let store of stores">
+                                                                    <a class="dropdown-item"
+                                                                        href="/store/{{store.id}}">
+                                                                        {{store.name}}
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
+                            data-bs-target=".header-nav-main nav">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

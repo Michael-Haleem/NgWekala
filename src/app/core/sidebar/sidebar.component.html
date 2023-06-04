@@ -1,0 +1,24 @@
+<aside class="sidebar">
+    <h5 class="font-weight-semi-bold pt-3">Categories</h5>
+    <ul class="nav nav-list flex-column">
+
+        <li class="nav-item" *ngFor="let cat of categories"> 
+            <a class="nav-link" routerLink="/category/{{cat.id}}">{{ cat.name }}</a>
+        </li>
+    </ul>
+
+    <div class="row mb-5">
+        <div class="col-sm-4 col-lg-12">
+            <h5 class="font-weight-semi-bold pt-5">Recent Products</h5>
+            <app-recent-products></app-recent-products>
+        </div>
+        <div class="col-sm-4 col-lg-12">
+            <h5 class="font-weight-semi-bold pt-5">Last Viewed Products</h5>
+            <app-last-viewed-products></app-last-viewed-products>
+        </div>
+        <div class="col-sm-4 col-lg-12">
+            <h5 class="font-weight-semi-bold pt-5">Top Rated Products</h5>
+            <app-top-rated-products></app-top-rated-products>
+        </div>
+    </div>
+</aside>
